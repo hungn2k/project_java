@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Service.Controller9">
+   <children>
+      <MenuBar prefHeight="32.0" prefWidth="179.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="table" layoutX="-1.0" layoutY="32.0" prefHeight="368.0" prefWidth="530.0">
+        <columns>
+            <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="Name" prefWidth="195.0" text="Name" />
+          <TableColumn fx:id="time" prefWidth="151.0" text="TGLT" />
+            <TableColumn fx:id="SoDu" minWidth="2.0" prefWidth="90.0" text="SDTK" />
+        </columns>
+      </TableView>
+      <TextField fx:id="NoiDung" layoutX="179.0" layoutY="1.0" prefHeight="31.0" prefWidth="268.0" />
+      <Button layoutX="529.0" layoutY="61.0" mnemonicParsing="false" onAction="#Edit" prefHeight="31.0" prefWidth="65.0" text="Edit" />
+      <Button layoutX="529.0" layoutY="92.0" mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="65.0" text="Delete" />
+      <Button layoutX="529.0" layoutY="123.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="65.0" text="Back" />
+      <Button layoutX="447.0" layoutY="1.0" mnemonicParsing="false" onAction="#search" text="Tìm Kiếm" />
+   </children>
+</Pane>

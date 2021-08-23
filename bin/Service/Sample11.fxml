@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Service.Controller11">
+   <children>
+      <TableView fx:id="table" layoutX="-1.0" layoutY="32.0" prefHeight="368.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="Name" prefWidth="262.0" text="Name" />
+          <TableColumn fx:id="time" prefWidth="149.0" text="TGLT" />
+            <TableColumn fx:id="SoDu" minWidth="2.0" prefWidth="92.0" text="SDTK" />
+        </columns>
+      </TableView>
+      <TextField fx:id="NoiDung" layoutX="161.0" layoutY="1.0" prefHeight="31.0" prefWidth="343.0" />
+      <Button layoutX="504.0" layoutY="1.0" mnemonicParsing="false" onAction="#search" prefHeight="31.0" prefWidth="93.0" text="Tìm Kiếm" />
+      <Label layoutX="105.0" layoutY="6.0" text="Nhập x " />
+      <Button layoutX="-1.0" layoutY="1.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="93.0" text="Back" />
+   </children>
+</Pane>

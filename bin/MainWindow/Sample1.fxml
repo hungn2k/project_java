@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainWindow.Controller1">
+   <children>
+      <MenuBar layoutY="-2.0" prefHeight="32.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutY="30.0" prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: #9980e6;" text="                CHƯƠNG TRÌNH QUẢN LÝ THẺ NGÂN HÀNG">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <VBox layoutX="187.0" layoutY="111.0" prefHeight="245.0" prefWidth="255.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#change" prefHeight="57.0" prefWidth="241.0" text="Thêm, Xóa,Chỉnh Sửa" />
+                  <Button mnemonicParsing="false" onAction="#search" prefHeight="48.0" prefWidth="241.0" text="Tìm kiếm" />
+                  <Button mnemonicParsing="false" onAction="#tinh" prefHeight="56.0" prefWidth="241.0" text="Phí Duy Trì Thẻ" />
+                  <Button mnemonicParsing="false" onAction="#laiSuat" prefHeight="51.0" prefWidth="241.0" text="Doanh Thu" />
+               </children>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#back" prefHeight="51.0" prefWidth="241.0" text="Back" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="54.0" fitWidth="55.0" layoutX="124.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngtree-banking-card-vector-icon-png-image_4279241.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="70.0" layoutX="442.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tải%20xuống.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="69.0" layoutX="110.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngtree-send-money-icon-design-png-image_1010723.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="55.0" layoutX="445.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="48.0" fitWidth="55.0" layoutX="442.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tải%20xuống%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

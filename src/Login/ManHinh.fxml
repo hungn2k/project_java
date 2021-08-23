@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DangNhap">
+   <children>
+      <MenuBar layoutY="-2.0" prefHeight="32.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="267.0" layoutY="167.0" text="Username" />
+      <Label layoutX="269.0" layoutY="224.0" text="Password" />
+      <TextField fx:id="name" layoutX="373.0" layoutY="163.0" promptText="Username" />
+      <TextField fx:id="password" layoutX="376.0" layoutY="219.0" promptText="Password" />
+      <Button layoutX="373.0" layoutY="281.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="60.0" text="Login" />
+      <ImageView fitHeight="368.0" fitWidth="227.0" layoutX="14.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images%20(5).jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="cancelButton" layoutX="481.0" layoutY="281.0" mnemonicParsing="false" onAction="#cancelButton" text="Cancel" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="106.0" fitWidth="129.0" layoutX="386.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tải%20xuống.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

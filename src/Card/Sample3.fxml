@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Card.Controller3">
+   <children>
+      <MenuBar layoutY="-2.0" prefHeight="32.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox layoutX="206.0" layoutY="169.0" prefHeight="79.0" prefWidth="278.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#TheNangCao" prefHeight="79.0" prefWidth="279.0" style="-fx-background-color: #dac4c8;" text="Thẻ Nâng Cao" textFill="#252424" />
+         </children>
+      </VBox>
+      <Button layoutX="310.0" layoutY="290.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="86.0" text="Back" />
+      <Button layoutX="206.0" layoutY="90.0" mnemonicParsing="false" onAction="#TheCoBan" prefHeight="79.0" prefWidth="278.0" style="-fx-background-color: #9980e6;" text="Thẻ Cơ Bản" />
+      <ImageView fitHeight="79.0" fitWidth="107.0" layoutX="92.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1Capture.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="107.0" layoutX="92.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2Capture.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
